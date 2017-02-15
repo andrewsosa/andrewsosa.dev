@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}AndrewTheWizard{% endblock %}
+
+{% block scripts %}
+  {{super()}}
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="{{url_for('.static', filename='jquery.scrollify.js')}}"></script>
+  <script src="{{url_for('.static', filename='scrolls.js')}}"></script>
+
+
+  <script>
+    $(function() {
+      $.scrollify({
+        section: ".section",
+        sectionName : "section-name",
+        easing: "swing",
+        scrollSpeed: 500,
+        scrollbars: false,
+        before: beforeScroll,
+        after: beforeScroll
+      });
+    });
+
+
+  </script>
+
+{% endblock %}
+
+{% block content %}
+
+  {% if header %}
+  <div class="section" id="Home" data-section-name="home">
+    <div class="title-wrapper">
+      <h1 class="title text-center">{{header.title}}</h1>
+      <h2 class="subtitle text-center">{{header.subtitle}}</h2>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if about %}
+  <div class="section" id="About" data-section-name="about">
+    <div class="container">
+      <h1>{{about.title}}</h1>
+      <p>{{about}}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% for s in sections %}
+  <div class="section" id="{{s.title}}" data-section-name="{{s.title|lower}}">
+    <div class="container">
+      <div class="center-block section-header">
+          <h1>{{s.title}}</h1>
+          <p>{{s}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% if page.title %}
+  {% block title %}
+    {{ page.title }}
+  {% endblock %}
+{% endif %}
+
+{% block content %}
+<div class="container pages">
+  {% if page.title %}
+    <h2>{{ page.title }}</h2>
+    <hr>
+  {% endif %}
+  {{ page.html|safe }}
+</div>
+{% endblock content %}

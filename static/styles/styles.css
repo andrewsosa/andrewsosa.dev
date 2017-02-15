@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+  height: 100%; }
+
+body {
+  color: #004446;
+  background-color: #FFF;
+  font: 18px/1 "Open Sans", sans-serif;
+  height: 100%;
+  position: relative; }
+
+.section {
+  height: 100%;
+  padding-top: 50px;
+  line-height: 150%; }
+
+.section-header {
+  text-align: center; }
+  .section-header h1 {
+    font-family: "Montserrat", sans-serif; }
+
+#Home {
+  background-color: #2196F3; }
+
+#About {
+  text-align: center;
+  background-color: #F2E394; }
+
+#Celebrity Death Clock h1 {
+  font-family: "Montserrat", sans-serif; }
+
+#Postcred h1 {
+  text-transform: uppercase; }
+
+.base {
+  height: 100%; }
+
+.title-wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  margin-top: 0;
+  padding-top: 80px; }
+
+.title, .subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  margin-top: 0;
+  color: #FFF; }
+
+.subtitle {
+  font-size: 28px;
+  margin-top: 16px; }
+
+.navbar-default {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1024;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0;
+  border-width: 0; }
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif; }
+
+.navbar-default .navbar-brand {
+  color: #FFF; }
+
+.navbar-default .nav .active a {
+  color: #FFF; }
+.navbar-default .nav li a {
+  color: #FFF; }
+
+.dropdown-menu > li > a {
+  color: #004446 !important; }
+
+@media (min-width: 768px) {
+  .nav {
+    float: right !important; } }
+@media (min-width: 1200px) {
+  .title-wrapper {
+    z-index: 1025; } }
+
+/*# sourceMappingURL=styles.css.map */

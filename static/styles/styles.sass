@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700)
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500,700)
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+
+$title-font: 	'Roboto', sans-serif
+$body-font:		'Open Sans', sans-serif
+$brand-font:	'Montserrat', sans-serif
+
+// Colors
+$green:			#588C7E
+$yellow:		#F2E394
+$orange:		#F2AE72
+$red:			#D96459
+$red-dark:		#8C4646
+$cyan:			#00bcd4
+$blue:			#2196F3
+
+$primary-color:	$cyan
+$accent-color:	#ffea00
+$white:			#FFF
+$text: 			rgb(0, 68, 70)
+
+@mixin centerer
+	position: absolute
+	top: 45%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+// HTML Element Tags
+
+html
+	height:				100%
+
+body
+	color:				$text
+	background-color:	$white
+	font: 				18px/1 $body-font
+	height:				100%
+	position: 			relative
+
+// FlatPages stylings
+
+.section
+	height: 			100%
+	padding-top: 		50px
+	line-height: 		150%
+
+.section-header
+	text-align: center
+
+	h1
+		font-family: "Montserrat", sans-serif
+
+
+// Section styles
+#Home
+	background-color:	$blue
+
+#About
+	text-align: center
+	background-color: 	$yellow
+
+#Celebrity Death Clock
+	h1
+		font-family: 	"Montserrat", sans-serif
+
+#Postcred
+	h1
+		text-transform: uppercase
+
+// Element Styles
+
+.base
+	height:				100%
+
+.title-wrapper
+	@include 			centerer
+	height:				300px
+	margin-top:			0
+	padding-top:		80px
+
+.title
+	font-family:		'Roboto', sans-serif
+	font-size:			42px
+	font-weight:		300
+	margin-top:			0
+	color:				$white
+
+
+.subtitle
+	@extend .title
+	font-size:			28px
+	margin-top:			16px
+
+.navbar-default
+	position: 			fixed
+	right:				0
+	left: 				0
+	z-index: 			1024
+
+	background-color: 	rgba(0,0,0,0)
+	font-family:		$brand-font
+
+	border-radius: 		0
+	border-width: 		0
+
+
+
+.navbar-brand
+	font-family: 		$brand-font
+
+.navbar-default .navbar-brand
+	color:				$white
+
+.navbar-default .nav
+	.active a
+		color:				$white
+	li a
+		color:				$white
+
+.dropdown-menu>li>a
+	color:				$text !important
+
+@media (min-width: 768px)
+	.nav
+		float: right !important
+
+@media (min-width: 1200px)
+	.title-wrapper
+		z-index:			1025
