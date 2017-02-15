@@ -1,0 +1,26 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Andrew Sosa's Homepage",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andrewsosa001/Homepage.git"
+  },
+  "author": "Andrew Sosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewsosa001/Homepage/issues"
+  },
+  "homepage": "https://github.com/andrewsosa001/Homepage#readme",
+  "dependencies": {
+    "gulp-pug": "^3.2.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
