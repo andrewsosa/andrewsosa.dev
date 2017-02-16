@@ -1,2 +1,39 @@
-<!DOCTYPE html><html lang="en"><head><title>Andrew Sosa</title></head><body><h1>Pug - node template engine</h1><div class="container col" id="main"><p>Pug is a terse and simple templating language with a
-strong focus on performance and powerful features.</p></div></body></html>
+<!DOCTYPE html><html lang="en"><head><title>Andrew Sosa</title><link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="./css/styles.css"></head><body><nav class="navbar navbar-default"><div class="container"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="collapse navbar-collapse" id="navbar"><ul class="nav navbar-nav"><li><a href="#blog">Blog</a></li><li><a href="./resume.html">Resume</a></li><li><a href="http://github.com/andrewsosa001">Github</a></li></ul></div></div></nav><div class="block banner-wrap"><div class="banner-bg"><img id="splash" src="assets/logo.svg"></div><div class="banner container block"><div class="banner-inner"><h1 id="andrew">Andrew Sosa</h1><h2 id="label">Software Engineer | Student Leader</h2><div class="btn-wrap"><button id="btn-resume" onclick="location.href='./resume.html';">My Resume</button><button id="btn-contact" onclick="location.href='mailto:andrew@andrewsosa.com';">Contact Me</button></div></div></div></div><div class="container sheet" id="blog"><h3 class="blog-title">Andrew's Blog</h3><div class="post"><p><img src="assets/hackfsu17.png" alt="HackFSU 2017"></p>
+<h1>HackFSU Android Workshop</h1>
+<p><em>16 February 2017</em></p>
+<p>This year I've been honored with privildge to lead an Android workshop at <a href="http://hackfsu.com"><strong>HackFSU</strong></a>.
+Maybe a little less honored since the workshop is at 3am, but hey – I'm still
+excited!</p>
+<p>The workshop is aimed at developers who've never worked with Android before.
+Here's a rough outline of the presentation:</p>
+<ol>
+<li><strong>Intro to Android</strong>: A short 5-10 minute overview of what Android is, how it
+works, and high level code concepts for developing for Android.</li>
+<li><strong>Code Examples</strong>: Here's I'll be demonstrating the concepts we covered by
+repairing intentional damage to the HackFSU app. Participants can follow along
+on their own machines we implement the app's update fetching feature.</li>
+<li><strong>Firebase Demo</strong>: Finally, the participants and I will work in parallel to
+create a simple chat application using <a href="http://firebase.google.com"><strong>Firebase</strong></a>. By the end of the workshop,
+the participants will be able to all connect to the same chat groups and send
+each-other messages.</li>
+</ol>
+<p>The slides are still in progress, but they'll certainly be ready before the
+workshop early Saturday morning.</p>
+<p>See you there!</p>
+</div><hr><div class="post"><h1>New site, who this?</h1>
+<p><em>15 February 2017</em></p>
+<p>Welcome to my new homepage! Since I've owned my domain for almost three years now,
+I always wanted to do something useful with it. I recently started using it as
+my primary email (<a href="mailto:andrew@andrewsosa.com">andrew@andrewsosa.com</a>), and
+I figured I might as well create a homepage for it as well.</p>
+<p>To create this site, I used Pug (formerly Jade) and Sass, as well as the tool
+Gulp to automatically build the two into their respective languages (being
+HTML and CSS). These posts are actually written in Markdown, and included into
+the <code>.pug</code> files via the <code>markdown-it</code> filter for Pug.</p>
+<p>All together, creating this site was an excellent adventure in new tools,
+languages, and frameworks that took just over a day to complete, including
+the design process in Affinity Designer.</p>
+<p>I plan to expand this page to include an extended resume section which doubles
+as a gallery of my related work and activities.</p>
+<p>Until then, cheers!</p>
+</div><hr></div><script src="./js/jquery.min.js"></script><script src="./js/bootstrap.min.js"></script></body></html>

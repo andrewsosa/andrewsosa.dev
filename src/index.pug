@@ -1,10 +1,35 @@
 doctype html
 html(lang="en")
-  head
-    title="Andrew Sosa"
+  include includes/head.pug
   body
-    h1 Pug - node template engine
-    #main.container.col
-      p.
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
+    include includes/navbar.pug
+    .block.banner-wrap
+      .banner-bg
+        img#splash(src="assets/logo.svg")
+      .banner.container.block
+        .banner-inner
+          h1#andrew Andrew Sosa
+          h2#label Software Engineer | Student Leader
+          .btn-wrap
+            button#btn-resume(onclick="location.href='./resume.html';") My Resume
+            button#btn-contact(onclick="location.href='mailto:andrew@andrewsosa.com';") Contact Me
+    #blog.container.sheet
+      h3.blog-title Andrew's Blog
+      .post
+        include:markdown-it blog/hackfsu.md
+      hr
+      .post
+        include:markdown-it blog/site.md
+      hr
+
+    //- include includes/footer.pug
+
+    //- Import scipts AFTER document
+    include includes/scripts.pug
+
+
+    //- <nav class="navbar navbar-default navbar-fixed-top">
+    //-   <div class="container">
+    //-     ...
+    //-   </div>
+    //- </nav>

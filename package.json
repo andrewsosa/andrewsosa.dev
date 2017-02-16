@@ -18,9 +18,11 @@
   "homepage": "https://github.com/andrewsosa001/Homepage#readme",
   "dependencies": {
     "gulp-pug": "^3.2.0",
+    "jstransformer-markdown-it": "^2.0.0",
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
