@@ -22,6 +22,8 @@ each-other messages.
 The slides are still in progress, but they'll certainly be ready before the
 workshop early Saturday morning.
 
+UPDATE: Slides are done! You can find them [**here**](./workshop.pdf).
+
 See you there!
 
 [hackfsu]: assets/hackfsu17.png
