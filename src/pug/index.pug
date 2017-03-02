@@ -1,0 +1,47 @@
+//- index.pug
+extends templates/base.pug
+
+block append styles
+  link(rel="stylesheet", href="./css/index.css")
+
+block content
+  #header
+    .header-content.container
+      h1
+        span= 'Hello! I\'m '
+        span.name Andrew Sosa
+      h2.
+        Software Engineer | Student Leader | Product Designer
+      a#contact-me.md-button(href='mailto:andrew@andrewsosa.com?subject=Hello!').
+        Contact me
+
+  #about-me
+    .about-me-content.container
+      .text-group
+        .label About Me
+        h1 Andrew Sosa
+        p
+          | Masters student studying Computer Science at
+          | Florida State University in Tallahassee, FL.
+        p
+          | Chapter President with ACM at FSU.
+        p
+          | Founder and Creative Director with Arrow Labs.
+        //- a.md-button(href='').
+        //-   Read More
+      .logo-wrap
+        img(src="./assets/logo-red.svg")
+
+  #github
+    .github-content.container
+      .section-header
+        h1.section-title Github
+        .section-subtitle My most relevant open-source projects.
+
+      include includes/repositories.pug
+
+  //- #involvement
+  //-   .involvement-content.container
+  //-     .section-header
+  //-       h1.section-title Involvement
+  //-       .section-subtitle Impact on student communities in Tallahassee.

@@ -1,0 +1,39 @@
+// index/about-me.sass
+#about-me
+    color: $text-grey
+
+    .about-me-content
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        height: 433px
+        padding-top: 32px
+        padding-bottom: 32px
+
+        .text-group
+            .label
+                @include font('Open Sans', 12px, 700, $label-grey)
+                text-transform: uppercase
+            h1
+                @include font($monty, 44px, 700, $text-grey)
+                margin-bottom: 40px
+            p
+                @include font($merri, 16px, 500, $text-grey)
+                max-width: 540px
+            a
+                margin-top: 14px
+
+        .logo-wrap
+            width: 50%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            img
+                width: 236px
+                height: 162px
+
+            @media (max-width: 786px)
+                display: none

@@ -1,0 +1,27 @@
+// Multiple font requests on a single line (saves time!)
+// @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:700|Roboto:400,500')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:700')
+
+// Dynamic font size definitions
+$title-size:    (null: 1.5em, 500px: 2em, 768px: 4em)
+$btn-size:      (null: .75em, 500px: 1em)
+
+@mixin font-size($fs-map)
+    @each $fs-breakpoint, $fs-font-size in $fs-map
+        @if $fs-breakpoint == null
+            font-size: $fs-font-size
+        @else
+            @media screen and (min-width: $fs-breakpoint)
+                font-size: $fs-font-size
+
+
+// Font defs
+$roboto:    'Roboto', sans-serif
+$monty:     'Montserrat', sans-serif
+$merri:     'Merriweather', sans-serif
+
+@mixin font($family, $size, $weight: 500, $color: #000)
+    font-family: $family
+    font-weight: $weight
+    font-size: $size
+    color: $color

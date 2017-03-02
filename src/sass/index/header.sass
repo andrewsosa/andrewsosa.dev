@@ -1,0 +1,22 @@
+// index/header.sass
+#header
+    background-color: $white
+    color: $black
+
+    .header-content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 496px
+
+        h1
+            @include font($monty, 64px)
+            .name
+                color: $primary
+
+        h2
+            @include font($merri, 30px, 700)
+
+        #contact-me
+            margin-top: 70px
