@@ -1,2 +1,5 @@
+# Installables
 node_modules/
-design/
+
+# Buildables
+html/
