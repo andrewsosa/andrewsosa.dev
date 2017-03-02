@@ -16,13 +16,19 @@
     "url": "https://github.com/andrewsosa001/Homepage/issues"
   },
   "homepage": "https://github.com/andrewsosa001/Homepage#readme",
-  "dependencies": {
+  "devDependencies": {
+    "eeyore": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-data": "^1.2.1",
     "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
     "jstransformer-markdown-it": "^2.0.0",
     "pug": "^2.0.0-beta11"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "eeyore": "^1.0.2",
+    "jquery": "^3.1.1"
   }
 }
