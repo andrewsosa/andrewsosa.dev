@@ -27,7 +27,7 @@ gulp.task('pug', ['github'], function() {
         .pipe(pug({
             locals: locals
         }).on('error', console.log))
-        .pipe(gulp.dest(build)); // tell gulp our output folder
+        .pipe(gulp.dest(build));
 });
 
 // Compiles .sass into .css
@@ -47,10 +47,16 @@ gulp.task('bootstrap', function() {
 });
 
 // Copies assets into build
-gulp.task('assets', function() {
+gulp.task('assets', ['favicon'], function() {
     gulp.src('src/static/assets/*')
         .pipe(gulp.dest(build + '/assets/'))
-})
+});
+
+// Copy favicons into place
+gulp.task('favicon', function() {
+    gulp.src('src/static/favicon/*')
+        .pipe(gulp.dest(build));
+});
 
 // Removes built files
 gulp.task('clean', function() {
