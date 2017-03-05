@@ -5,6 +5,8 @@ var locals = {};
 locals.github = "http://github.com/";
 locals.me = "andrewsosa001";
 
+locals.involvement = require('./json/involvement');
+
 locals.footer = {
     blog: "http://medium.com/@andrewsosa001",
     contact: "mailto:andrew@andrewsosa.com",

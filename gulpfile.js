@@ -2,6 +2,7 @@ var fs = require('fs');
 var gulp = require('gulp');
 
 var build = 'html';
+var json = './src/json/'
 
 // Retrieve Github pins
 gulp.task('github', function() {
@@ -10,7 +11,7 @@ gulp.task('github', function() {
 
     }).then(repos => {
         var data = JSON.stringify({repos: repos});
-        fs.writeFile('src/github.json', data);
+        fs.writeFile(json + 'github.json', data);
     });
 
 });
@@ -22,7 +23,7 @@ gulp.task('pug', ['github'], function() {
     var locals = require('./src/locals.js');
     gulp.src('src/pug/*.pug')
         .pipe(data(files => {
-            return require('./src/github.json');
+            return require(json + 'github.json');
         }))
         .pipe(pug({
             locals: locals
