@@ -7,11 +7,14 @@ block append styles
 block content
   #header
     .header-content.container
-      h1
-        span= 'Hello! I\'m '
-        span.name Andrew Sosa
-      h2.
-        Software Engineer | Student Leader | Product Designer
+      h1= 'Hello! I\'m '
+        .name= 'Andrew Sosa'
+      .interests
+        span Software Engineer
+        span.bar= '|'
+        span Student Leader
+        span.bar= '|'
+        span Product Designer
       a#contact-me.md-button(href='mailto:andrew@andrewsosa.com?subject=Hello!').
         Contact me
 
@@ -40,8 +43,10 @@ block content
 
       include includes/repositories.pug
 
-  //- #involvement
-  //-   .involvement-content.container
-  //-     .section-header
-  //-       h1.section-title Involvement
-  //-       .section-subtitle Impact on student communities in Tallahassee.
+  #involvement
+    .involvement-content.container
+      .section-header
+        h1.section-title Involvement
+        .section-subtitle Impact on student communities in Tallahassee.
+
+      include includes/involvements.pug

@@ -10,13 +10,51 @@
         align-items: center
         height: 496px
 
+        // @media (min-width: 768px)
+        //     *
+        //         display: inline-block
+        //
+
         h1
             @include font($monty, 64px)
             .name
                 color: $primary
 
-        h2
+        h1 *
+            display: inline-block
+
+
+        .interests
+            padding: 0
+            // @media (max-width: 991px)
+            //     align-self: baseline
+            //     display: flex
+            //     flex-direction: column
+
+        .interests span
             @include font($merri, 30px, 700)
+            display: inline-block
+
+
+        .bar
+            margin: 0 8px
+            // @media (max-width: 991px)
+            //     visibility: collapse
+            //     height: 0
+            //     width: 0
 
         #contact-me
             margin-top: 70px
+
+        @media (max-width: 991px)
+            .interests
+                align-self: baseline
+                display: flex
+                flex-direction: column
+            .bar
+                visibility: collapse
+                height: 0
+                width: 0
+            #contact-me
+                margin-top: 35px
+                margin-bottom: 35px
