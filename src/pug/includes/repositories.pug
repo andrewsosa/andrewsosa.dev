@@ -1,7 +1,7 @@
 //- includes/repositories.pug
 .repositories
   each repo in locals.repos
-    .flex-card
+    .flex-card.flex-card-repo
       .md-card.repo-card
         a(href=locals.github + repo.owner + '/' +repo.repo)
           if repo.owner == locals.me
