@@ -1,5 +1,6 @@
 var fs = require('fs');
 var gulp = require('gulp');
+var locals = require('./src/locals.js');
 
 var build = 'html';
 var json = './src/json/'
@@ -7,7 +8,7 @@ var json = './src/json/'
 // Retrieve Github pins
 gulp.task('github', function() {
     var eeyore = require('eeyore');
-    return repos = eeyore('andrewsosa001', {
+    return repos = eeyore(locals.me, {
 
     }).then(repos => {
         var data = JSON.stringify({repos: repos});
@@ -20,7 +21,6 @@ gulp.task('github', function() {
 gulp.task('pug', ['github'], function() {
     var pug = require('gulp-pug');
     var data = require('gulp-data');
-    var locals = require('./src/locals.js');
     gulp.src('src/pug/*.pug')
         .pipe(data(files => {
             return require(json + 'github.json');

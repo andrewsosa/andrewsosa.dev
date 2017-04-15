@@ -3,7 +3,7 @@ var locals = {};
 
 
 locals.github = "http://github.com/";
-locals.me = "andrewsosa001";
+locals.me = "andrewsosa";
 
 locals.involvement = require('./json/involvement');
 
