@@ -1,0 +1,35 @@
+//- index/involvement.pug
+
+section.section#involvement
+  .container
+  
+    +section-header('Involvement', 'Impact on student communities in Tallahassee.')
+    
+    .instances
+      
+      each inv in locals.involvement
+        - image = `background-image: url('public/${inv.image}');`
+      
+        .columns.is-gapless.is-desktop.instance()
+          .column.is-one-half.relative
+            .image.is-overlay(style=image)
+          .column
+            .info
+              .header
+                h1= inv.name
+                .positions
+                  each r in inv.roles
+                    .position= r
+                      //- span 2017-2018
+              .about
+                h1 About
+                p= inv.description   
+              .site
+                h1 Site
+                a(href= inv.site.url)= inv.site.display
+              .exp
+                h1 Experience
+                p= inv.experience
+
+
+    

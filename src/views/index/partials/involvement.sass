@@ -1,0 +1,53 @@
+// index/involvement.sass
+
+section#involvement
+
+    .instance
+        // min-height: 400px
+        background-color: $white-ter
+
+        // color: $white
+        position: relative
+        margin: 32px 0
+
+        // & > :not(.is-overlay)
+        //     z-index: 1
+
+        .relative
+            position: relative
+
+        .image
+            $x: 24px
+            background-position: center
+            background-size: cover
+            margin: $x $x*.5 $x $x
+            border-radius: 8px
+
+        .info
+            padding: 24px 64px 24px 32px
+            background-color: $white
+            z-index: 10
+            border: 12px solid $white-ter
+            box-sizing: border-box
+
+            & > *
+                margin-bottom: 24px
+
+            .header h1
+                font-size: $size-4
+                font-weight: 700
+                color: $black
+
+            .positions .position span
+                color: $grey-light
+                margin-left: 8px
+
+                &::before
+                    content: "("
+                &::after
+                    content: ")"
+
+            .about h1, .site h1, .exp h1
+                font-size: $size-6
+                font-weight: 700
+                color: $black
