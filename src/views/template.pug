@@ -1,0 +1,20 @@
+//- template.pug
+
+html
+  head
+    
+    block title
+      title Andrew Sosa 
+      
+    block styles
+      //- Note the ES2015 iterpolation in the href field
+      link(rel="stylesheet", href=`${locals.css}/default.css`)
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css")
+        
+    block scripts
+
+    block meta
+      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+  body
+    block content
