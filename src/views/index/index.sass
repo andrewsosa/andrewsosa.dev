@@ -1,7 +1,9 @@
-@import "bulma/sass/utilities/_all"
-@import "bulma/sass/base/_all"
-@import "bulma/sass/layout/_all"
+// index.sass
+
+@import "default"
+
 @import "bulma/sass/grid/columns"
+@import "bulma/sass/elements/other"
 
 @import "partials/header"
 @import "partials/github"
@@ -10,8 +12,11 @@
 .section-header
     .text
         display: flex
-        justify-content: space-between
         align-items: center
+        justify-content: space-between
+
+        +mobile
+            flex-direction: column
 
         h1
             font-size: $size-5
