@@ -1,6 +1,8 @@
 // locals.js
 var locals = {};
 
+locals.css = "./css";
+locals.img = "./assets/img";
 
 locals.github = "http://github.com/";
 locals.me = "andrewsosa";
