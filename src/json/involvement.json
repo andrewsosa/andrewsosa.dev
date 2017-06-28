@@ -11,13 +11,16 @@
             "url": "http://acmatfsu.org"
         },
         "description": "Student group focused on Professional and Academic experience in Computer Science.",
-        "experience": "Leadership & Teamwork"
+        "experience": "Leadership & Teamwork",
+        "image": "acm.jpg",
+        "color": "#0182AC"
+
     },
 
     "hackfsu": {
         "name": "HackFSU",
         "roles": [
-            "Development Director (2017-2018)",
+            "Dev. Director (2017-2018)",
             "Mobile Developer (2015-2017)"
         ],
         "site": {
@@ -25,7 +28,9 @@
             "url": "https://hackfsu.com"
         },
         "description": "Florida's premiere student hackathon held at Florida State. Emphasis on community.",
-        "experience": "Mobile Dev & Mentoring"
+        "experience": "Mobile Dev & Mentoring",
+        "image": "hackfsu.jpg",
+        "color": "#4D0A34"
     },
 
     "renegade": {
@@ -39,6 +44,8 @@
             "url": "https://renegadestaterecords.bandcamp.com/"
         },
         "description": "FSU student group acting as a record label in the College of Music.",
-        "experience": "Organization & Local Culture"
+        "experience": "Organization & Local Culture",
+        "image": "rsr.jpg",
+        "color": "#111"
     }
 }
