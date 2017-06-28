@@ -1,0 +1,29 @@
+//- index/github.pug
+
+.section.repositories
+
+  +section-header('Github', 'My most relevant open source projects.')
+  
+  .columns.is-multiline
+    each repo in locals.repos
+      .column.is-one-third
+        
+        .card
+          a(href=locals.github + repo.owner + '/' +repo.repo)
+            header.card-header
+              - var owner = repo.owner == locals.me ? repo.repo : repo.owner + '/' + repo.repo
+              p.card-header-title= owner
+              a.card-header-icon
+                span.icon
+                  - var color = `color: ${repo.color};`
+                  i.fa.fa-circle(style=color)
+          .card-content
+            .content
+              p= repo.description
+              if repo.origin
+                - var ref = locals.github + repo.origin
+                br
+                small
+                  = 'Forked from '
+                  span
+                    a(href=ref)= repo.origin
