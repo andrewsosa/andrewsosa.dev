@@ -1,5 +1,5 @@
 //- template.pug
-
+doctype html
 html
   head
     
@@ -11,10 +11,10 @@ html
       //- link(rel="stylesheet", href=`${locals.css}/default.css`)
       link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css")
         
-    block scripts
-
     block meta
       meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
 
   body
     block content
+    block scripts
+        script(src='https://widget.battleforthenet.com/widget.js' async)
