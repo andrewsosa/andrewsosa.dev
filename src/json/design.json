@@ -1,0 +1,14 @@
+{
+    "fpc2017": {
+        "name": "ACM Programming Contest",
+        "image": "fpc.png",
+        "desc": "Registration site for semesterly programming competition."
+    },
+
+    "homepage": {
+        "name": "This Site",
+        "image": "site.png",
+        "desc": "My portfolio for code, design, and involvement."
+    }
+
+}
