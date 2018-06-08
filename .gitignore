@@ -1,8 +1,11 @@
-# Installables
-node_modules/
+# dependencies
+node_modules
 
-# Buildables
-html/
-src/json/github.json
+# logs
+npm-debug.log
 
-\.DS_Store
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

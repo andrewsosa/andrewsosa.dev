@@ -1,35 +1,32 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "Andrew Sosa's Homepage",
-  "main": "build.js",
+  "description": "Nuxt.js edition of Andrew Sosa's homepage",
+  "author": "Andrew Sosa <andrewsosa001@gmail.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/andrewsosa001/Homepage.git"
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "node-sass": "^4",
+    "nuxt": "^1.0.0",
+    "nuxt-buefy": "^0.0.4",
+    "pug": "^2.0.3",
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5",
+    "webpack": "^4"
   },
-  "author": "Andrew Sosa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andrewsosa001/Homepage/issues"
-  },
-  "homepage": "https://github.com/andrewsosa001/Homepage#readme",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "bulma": "^0.4.2",
-    "eeyore": "^1.2.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-data": "^1.2.1",
-    "gulp-flatten": "^0.3.1",
-    "gulp-pug": "^3.2.0",
-    "gulp-sass": "^3.1.0",
-    "jquery": "^3.1.1",
-    "jstransformer-markdown-it": "^2.0.0",
-    "node-sass": "^4.5.3",
-    "pug": "^2.0.0-beta11"
-  },
-  "dependencies": {}
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
 }

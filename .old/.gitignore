@@ -1,0 +1,8 @@
+# Installables
+node_modules/
+
+# Buildables
+html/
+src/json/github.json
+
+\.DS_Store
