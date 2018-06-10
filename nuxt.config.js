@@ -20,18 +20,24 @@ module.exports = {
 
   css: [
     // node.js module but we specify the pre-processor
-    { src: '~assets/bulma.sass', lang: 'sass' }
+    { src: 'bulma/bulma.sass', lang: 'sass' }
   ],
 
 
   modules: [
-    ['nuxt-buefy', { materialDesignIcons: false }],
+    // ['nuxt-buefy', { css: false, materialDesignIcons: false }],
+    ['nuxt-sass-resources-loader', 'bulma/bulma.sass'],
   ],
 
   /*
   ** Build configuration
   */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     /*
     ** Run ESLint on save
     */
