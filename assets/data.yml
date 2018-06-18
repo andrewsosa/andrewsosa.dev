@@ -1,0 +1,40 @@
+# Header
+name: Andrew Sosa
+desc: Software Engineer for Harris Corporation in Melbourne, FL.
+prev: Former HackFSU Director, ACM Chapter President, State Farm Systems Intern.
+tags:
+  - text: github
+    href: https://github.com/andrewsosa
+  - text: linkedin
+    href: https://www.linkedin.com/in/andrew-sosa-78864279/
+  - text: twitter
+    href: https://twitter.com/andrewsosa_
+  - text: medium
+    href: https://medium.com/@andrewsosa
+
+# Community
+groups:
+  - name: HackFSU
+    jobs:
+      - Software Dev. Director (2017 - 2018)
+      - Lead Android Dev. (2015 - 2017)
+    desc: Florida's premiere student hackathon, hosted at Florida State.
+    site: hackfsu.com
+  - name: ACM at FSU
+    jobs:
+      - Pres. Emeritus (2017 - 2018)
+      - President (2016 - 2017)
+      - Secretary (2014 - 2016)
+    desc: Florida State's student Association for Computing Machinery chapter.
+    site: fsu.acm.org
+  - name: Renegade State Records
+    jobs:
+      - President (Fall 2014)
+      - Vice President (Spring 2014)
+      - Secretary (Fall 2013)
+    desc: Record Label at FSU. By students, for students.
+    site: renegadestaterecords.bandcamp.com
+  - name: Pinestock
+    jobs:
+      - Director (2011)
+    desc: All-day concert fundraiser for Pine View School's junior class.

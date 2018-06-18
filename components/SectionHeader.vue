@@ -1,26 +1,25 @@
 <style lang="sass" scoped>
-.section-header
-    .text
-        display: flex
-        align-items: center
-        justify-content: space-between
 
-        +mobile
-            flex-direction: column
+.level, h1, h6
+    margin-bottom: 0 !important
 
-        h1
-            font-size: $size-5
-            color: $black
+.level
+    align-items: flex-end
 
-    hr
-        margin: 8px 0 24px
+h6
+    font-weight: 400 !important
+
+hr
+    margin: 8px 0 24px
+
+
 </style>
 
 <template lang="pug">
 .section-header
-    .text
-        h1 {{ title }}
-        h2 {{ subtitle }}
+    .level.content
+        .level-left: h1 {{ title }}
+        .level-right: h6 {{ subtitle }}
     hr
 </template>
 

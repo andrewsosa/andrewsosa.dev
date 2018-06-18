@@ -1,6 +1,6 @@
 module.exports = {
   /*
-  ** Headers of the page
+  **  Headers of the page
   */
   head: {
     title: 'homepage',
@@ -13,24 +13,36 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
 
+  /*
+  **  Load custom style library, this makes all bulma sass classess available
+  **  to the templating.
+  */
   css: [
     // node.js module but we specify the pre-processor
-    { src: 'bulma/bulma.sass', lang: 'sass' }
-  ],
-
-
-  modules: [
-    // ['nuxt-buefy', { css: false, materialDesignIcons: false }],
-    ['nuxt-sass-resources-loader', 'bulma/bulma.sass'],
+    { src: 'bulma/bulma.sass', lang: 'sass' },
+    '@fortawesome/fontawesome/styles.css',
   ],
 
   /*
-  ** Build configuration
+  **  External modules
+  */
+  modules: [
+    ['nuxt-sass-resources-loader', 'bulma/bulma.sass'], // bulma vars for sass
+  ],
+
+  plugins: [
+    { src: '~/plugins/font-awesome' }
+  ],
+
+  module: {
+    rules: [
+      { test: /\.ya?ml$/, use: 'js-yaml-loader' }
+    ]
+  },
+
+  /*
+  **  Build configuration
   */
   build: {
     postcss: {
@@ -39,7 +51,7 @@ module.exports = {
       }
     },
     /*
-    ** Run ESLint on save
+    **  Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {

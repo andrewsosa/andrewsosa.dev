@@ -13,13 +13,19 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@nuxtjs/axios": "^5.3.1",
     "bulma": "^0.7.1",
+    "eeyore": "^2.0.2",
+    "js-yaml-loader": "^0.1.0",
     "node-sass": "^4",
     "nuxt": "^1.0.0",
-    "nuxt-buefy": "^0.0.4",
+    "nuxt-fontawesome": "^0.2.0",
     "nuxt-sass-resources-loader": "^2.0.2",
     "pug": "^2.0.3",
     "sass-loader": "^7.0.1",
+    "string_decoder": "^1.1.1",
     "vue": "^2.5",
     "webpack": "^4"
   },

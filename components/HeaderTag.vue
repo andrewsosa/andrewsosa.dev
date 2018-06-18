@@ -3,7 +3,7 @@
         font-size: $size-6
         font-weight: 500
         text-transform: lowercase
-        color: $white-ter
+        color: $white
 
 
         background-color: rgba($grey-lighter, 0.3)
@@ -14,7 +14,7 @@
         display: inline-block
 
         a
-            color: $white-ter
+            color: $white
 
             &:hover
                 text-decoration: underline
