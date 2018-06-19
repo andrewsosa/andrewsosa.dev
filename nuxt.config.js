@@ -28,7 +28,7 @@ module.exports = {
   **  External modules
   */
   modules: [
-    ['nuxt-sass-resources-loader', 'bulma/bulma.sass'], // bulma vars for sass
+    ['nuxt-sass-resources-loader', 'bulma/sass/utilities/_all.sass'], // bulma vars for sass
   ],
 
   plugins: [

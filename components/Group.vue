@@ -41,12 +41,7 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-
 export default {
-    components: {
-        FontAwesomeIcon
-    },
     props: [ "group" ],
     data: function () {
         return {
