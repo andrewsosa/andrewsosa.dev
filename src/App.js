@@ -1,21 +1,64 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
+import './App.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+import { Container, Columns, Column, Title } from 'bloomer';
+
+const Subtitle = styled.p`
+  margin-bottom: 12px;
+  color: #fff;
+`;
+
+const Link = styled.a`
+  background-color: #000;
+  color: #fff;
+  padding: 0 4px;
+  transition: .20s
+
+  & strong {
+    padding: 0 8px
   }
-}
 
-export default App;
+  &:hover {
+    color: #000
+    background-color: #fff;
+    border-radius: 2px
+  }
+`;
+
+export default () => (
+  <Container>
+    <Helmet>
+      <title>Andrew Sosa: homepage</title>
+      <meta name="theme-color" content="#000" />
+    </Helmet>
+    <Columns isCentered isTablet>
+      <Column className="is-narrow">
+        <div className="copy">
+          <Title>
+            Hi, I'm&nbsp;<br className="is-mobile" />
+            <Link><strong>Andrew Sosa</strong></Link>
+            .
+          </Title>
+          <Subtitle>
+            <Link href="https://github.com/andrewsosa">
+              Software Engineer</Link>
+            &nbsp;@&nbsp;
+            <Link href="https://www.harris.com/">
+              Harris Corporation</Link>, Melbourne FL.
+          </Subtitle>
+          <p className="body">
+            Feel free to look at&nbsp;
+            <Link>my resume</Link>, or take a peek at my&nbsp;
+            <Link href="https://github.com/andrewsosa">Github</Link>,&nbsp;
+            <Link href="https://stackoverflow.com/story/andrewsosa">
+              Stack Overflow</Link>, or&nbsp;
+            <Link href="https://sourcerer.io/andrewsosa">
+              Sourcerer.io</Link> profiles.
+          </p>
+        </div>
+      </Column>
+    </Columns>
+  </Container>
+);
