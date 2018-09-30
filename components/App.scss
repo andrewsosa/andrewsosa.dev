@@ -38,6 +38,8 @@ br.is-mobile {
   }
 
   a {
+    transition: .20s;
+
     & strong {
       padding: 0 8px;
     }

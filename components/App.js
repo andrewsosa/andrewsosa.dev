@@ -2,29 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import './App.scss';
 import Meta from './meta';
+import Link from './Link';
 
 import { Container, Columns, Column, Title } from 'bloomer';
 
 const Subtitle = styled.p`
   margin-bottom: 12px;
   color: #fff;
-`;
-
-const Link = styled.a`
-  background-color: #000;
-  color: #fff;
-  padding: 0 4px;
-  transition: .20s
-
-  & strong {
-    padding: 0 8px
-  }
-
-  &:hover {
-    color: #000
-    background-color: #fff;
-    border-radius: 2px
-  }
 `;
 
 export default () => (
@@ -35,7 +19,7 @@ export default () => (
         <div className="copy">
           <Title>
             Hi, I'm&nbsp;<br className="is-mobile" />
-            <Link href="https://www.linkedin.com/in/andrew-sosa">Andrew Sosa</Link>
+            <Link href="https://www.linkedin.com/in/andrew-sosa" header>Andrew Sosa</Link>
             .
           </Title>
           <Subtitle>
