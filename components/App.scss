@@ -37,6 +37,18 @@ br.is-mobile {
     margin-bottom: 96px;
   }
 
+  a {
+    & strong {
+      padding: 0 8px;
+    }
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+      border-radius: 2px
+    }
+  }
+
   h1, h2, h3, h4, h5, h6, .title {
     color: $grey-light;
     font-size: 64px;

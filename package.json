@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
+    "next": "^7.0.1",
     "node-sass": "^4.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
@@ -14,13 +16,13 @@
     "styled-components": "^3.4.9"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-styled-components": "^1.8.0",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -32,5 +34,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "now": {
+    "name": "homepage",
+    "alias": [
+      "andrewsosa-homepage.now.sh",
+      "andrewsosa.com",
+      "www.andrewsosa.com"
+    ],
+    "type": "npm",
+    "public": true
+  }
 }

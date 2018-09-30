@@ -30,7 +30,7 @@ const Link = styled.a`
 export default () => (
   <Container>
     <Meta />
-    <Columns isCentered isTablet>
+    <Columns isCentered>
       <Column className="is-narrow">
         <div className="copy">
           <Title>
@@ -47,7 +47,7 @@ export default () => (
           </Subtitle>
           <p className="body">
             Feel free to look at&nbsp;
-            <Link href="/resume.pdf">my resume</Link>, or take a peek at my&nbsp;
+            <Link href="/static/resume.pdf">my resume</Link>, or take a peek at my&nbsp;
             <Link href="https://github.com/andrewsosa">Github</Link>,&nbsp;
             <Link href="https://stackoverflow.com/story/andrewsosa">
               Stack Overflow</Link>, or&nbsp;
