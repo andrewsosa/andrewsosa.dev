@@ -35,7 +35,7 @@ export default () => (
         <div className="copy">
           <Title>
             Hi, I'm&nbsp;<br className="is-mobile" />
-            <Link><strong>Andrew Sosa</strong></Link>
+            <Link href="https://www.linkedin.com/in/andrew-sosa">Andrew Sosa</Link>
             .
           </Title>
           <Subtitle>
@@ -47,7 +47,7 @@ export default () => (
           </Subtitle>
           <p className="body">
             Feel free to look at&nbsp;
-            <Link>my resume</Link>, or take a peek at my&nbsp;
+            <Link href="/resume.pdf">my resume</Link>, or take a peek at my&nbsp;
             <Link href="https://github.com/andrewsosa">Github</Link>,&nbsp;
             <Link href="https://stackoverflow.com/story/andrewsosa">
               Stack Overflow</Link>, or&nbsp;
