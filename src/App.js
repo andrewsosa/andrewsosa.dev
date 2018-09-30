@@ -1,7 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import './App.scss';
+import Meta from './meta';
 
 import { Container, Columns, Column, Title } from 'bloomer';
 
@@ -29,10 +29,7 @@ const Link = styled.a`
 
 export default () => (
   <Container>
-    <Helmet>
-      <title>Andrew Sosa: homepage</title>
-      <meta name="theme-color" content="#000" />
-    </Helmet>
+    <Meta />
     <Columns isCentered isTablet>
       <Column className="is-narrow">
         <div className="copy">
