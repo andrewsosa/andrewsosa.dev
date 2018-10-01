@@ -34,15 +34,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "now": {
-    "name": "homepage",
-    "alias": [
-      "andrewsosa-homepage.now.sh",
-      "andrewsosa.com",
-      "www.andrewsosa.com"
-    ],
-    "type": "npm",
-    "public": true
-  }
+  ]
 }
