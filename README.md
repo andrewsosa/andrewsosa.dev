@@ -2,14 +2,10 @@
 > My personal website: https://andrewsosa.com
 
 ## Built With
-  - [Nuxt](https://nuxtjs.org/) – Universal Vue.js Applications
+  - [React](https://reactjs.org/) – Javascript UI framework.
   - [Bulma](https://bulma.io) - Sass Flexbox framework.
-  - [Eeyore](https://github.com/andrewsosa/eeyore) - My own Github pin grabber.
   - [Yarn](https://yarnpkg.com) – Better dependency management.
   - [Webpack](https://webpack.js.org/) - Javascript module bundler.
-  - [Font Awesome](https://fontawesome.com/) - Wonderful icons.
-  - [Pug](https://pugjs.org) - It's better than HTML!
-  <!-- - [Travis CI](https://travis-ci.org/) – Continuous Integration & Deployment. -->
 
 ## Usage
 I'm going to assume you want to customize the site and not just rehost this with my name and all.
@@ -21,15 +17,15 @@ You'll need to install the dependencies:
 $ yarn
 ```
 
-You can run the Nuxt development server as such:
+You can run the React development server:
 ```sh
-$ yarn dev
+$ yarn start
 ```
 
 To deploy:
 ```sh
-# Create the static files in /dist
-$ yarn generate
+# Create the static files in /build
+$ yarn build
 
 # Use push-dir to upload /dist to a gh-pages branch of your repo
 $ yarn deploy
