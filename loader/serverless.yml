@@ -1,0 +1,17 @@
+# serverless.yml
+
+service: homepage-loader
+
+provider:
+  name: aws
+  stage: dev
+  region: us-east-2
+
+functions:
+  # Grab headlines from Reddit
+  homepage:
+    runtime: nodejs8.10
+    handler: handler.run
+    events:
+      - schedule: rate(2 hours)
+
