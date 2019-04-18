@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,400i,600,600i');
+
+@import 'colors';
+@import 'typography';
+@import 'particles';
+@import 'listing';
+@import 'nav';
+
+body {
+    margin: 0;
+}
+
+.resume {
+    min-height: calc(95vh - 85px);
+}
+
+#name {
+    line-height: 1;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: $title-color;
+
+    &::after {
+        display: block;
+        content: '===========';
+    }
+}
+
+.title__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    background: $background;
+
+    @media only screen and (max-width: 400px) {
+        & { font-size: 10px; }
+    }
+
+    @media only screen and (max-width: 700px) {
+        & { font-size: 13px; }
+    }
+
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: 1rem;
+    margin: 2em 0;
+    margin-top: 4em;
+    max-width: 900px;
+    position: sticky;
+}
+
+.page-content {
+    padding-bottom: 2em;
+}
+
+.resume {
+    margin: auto;
+    @media only screen and (min-width: 600px) {
+        padding: 0em 3em;
+    }
+    padding: 0em 1em;
+    max-width: 900px;
+}
+
+.list--education {
+    .listing__description {
+        display: none;
+    }
+}
+
+.footer {
+    font-size: 1rem;
+    color: $text-color-light;
+    background-color: $black;
+
+    margin-top: 2em;
+    padding: 2em 2em;
+}
+
+.footer__item {
+    padding-right: 0.75em;
+
+    &::after {
+        content: ' /'
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::after {
+            content: ''
+        }
+    }
+}
+
+.footer__link {
+    color: lighten($link-color, 5%);
+
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+}

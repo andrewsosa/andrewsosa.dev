@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% import "macros/listing.html" as listing %}
+{% block content %}
+    {{ listing::listing(
+        title = page.title,
+        link = false,
+        entity = page.extra.entity,
+        description = page.description,
+        start_date = page.extra.start_date,
+        end_date = page.extra.end_date,
+        tags = false) }}
+
+    <article class="page-content">
+        {{ page.content | safe }}
+    </article>
+{% endblock content %}
