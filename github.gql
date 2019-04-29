@@ -1,0 +1,17 @@
+{
+  user(login: "andrewsosa") {
+    name
+    repositories(
+      first: 10
+      orderBy: { field: PUSHED_AT, direction: DESC }
+      ownerAffiliations: [OWNER]
+    ) {
+      nodes {
+        name
+        nameWithOwner
+        description
+        url
+      }
+    }
+  }
+}

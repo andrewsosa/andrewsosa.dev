@@ -1,0 +1,92 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../assets/fonts/Graphik-Regular-Web.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../assets/fonts/Graphik-Medium-Web.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pitch Sans Web';
+  src: url('../assets/fonts/PitchSansWeb-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+:root {
+  --gray: rgba(30, 30, 30, 1);
+  --light-gray: rgba(130, 130, 130, 1);
+  --border-gray: rgba(225, 225, 225, 1);
+  --input-gray: rgba(200, 200, 200, 1);
+  --background-gray: rgba(242, 242, 242, 1);
+  --background: white;
+  --text: var(--gray);
+  --dark-blue: #71427c;
+  --light-blue: #ccc7e9;
+  color: var(--gray);
+}
+
+.graphik {
+  color: var(--gray);
+
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Graphik Web', -apple-system, BlinkMacSystemFont, 'avenir next',
+    avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+    sans-serif;
+}
+
+.mono {
+  font-family: 'Fira Code', 'Inconsolata', Consolas, monaco, monospace;
+}
+
+.primary-color {
+  color: var(--dark-blue);
+}
+
+.accent-color {
+  color: var(--light-blue);
+}
+
+/* .accent-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.accent-bottom:after {
+  background-color: var(--light-blue);
+  bottom: 0;
+  content: ' ';
+  display: block;
+  height: 30%;
+  left: 7px;
+  opacity: 1;
+  position: absolute;
+  width: calc(100% + 20px);
+  z-index: -1;
+} */
+
+body {
+  min-height: 100vh;
+  /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+  /* background-image: linear-gradient(
+    120deg,
+    var(--light-blue) 0%,
+    var(--dark-blue) 100%
+  ); */
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
