@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "andrewsosa.dev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "5.0.0",
+  "author": "andrewsosa",
   "dependencies": {
     "dotenv": "^7.0.0",
     "gatsby": "^2.3.16",
@@ -16,6 +15,7 @@
     "gatsby-source-github-api": "^0.0.4",
     "gatsby-source-graphql": "^2.0.18",
     "gatsby-transformer-sharp": "^2.1.17",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
