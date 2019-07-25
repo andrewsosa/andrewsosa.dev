@@ -19,9 +19,10 @@ const query = graphql`
       viewer {
         email
         repositories(
-          first: 6
+          first: 12
           privacy: PUBLIC
-          orderBy: { field: UPDATED_AT, direction: DESC }
+          orderBy: { field: PUSHED_AT, direction: DESC }
+          affiliations: OWNER
         ) {
           edges {
             node {
@@ -29,6 +30,9 @@ const query = graphql`
               nameWithOwner
               url
               description
+              owner {
+                login
+              }
             }
           }
         }
@@ -46,6 +50,8 @@ const Projects = () => (
         <ContentList>
           {data.github.viewer.repositories.edges
             .map(edge => edge.node)
+            .filter(proj => proj.owner.login === 'andrewsosa')
+            .filter(proj => proj.description !== null)
             .map(proj => (
               <ProjectLink
                 link={proj.url}
