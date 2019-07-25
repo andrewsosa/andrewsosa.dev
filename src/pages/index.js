@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Andrew Sosa" keywords={[`gatsby`, `application`, `react`]} />
     <Section>
-      <p className="lh-copy f4 tl measure-narrow">
+      <p className="lh-copy f3 f2-m f1-l tl">
         Andrew Sosa is a Florida-based software & data engineer, currently
         working at Harris Corporation.
       </p>

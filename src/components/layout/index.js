@@ -21,9 +21,9 @@ import styles from './layout.module.css';
 const Layout = ({ children }) => (
   <>
     {/* pa4-l */}
-    <div className="pa4-l normal mono primary-color">
+    <div className="pt2 pb4 normal mono primary-color">
       <div className="bg-white h-100 pa3 ph0-l pv6-l">
-        <div className="center mw7">
+        <div className="center mw9 ph4">
           {/* <Navbar /> */}
           {children}
           <Footer />
