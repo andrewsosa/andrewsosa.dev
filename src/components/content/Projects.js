@@ -17,7 +17,24 @@ const query = graphql`
   query {
     github {
       viewer {
-        email
+        repositoriesContributedTo(
+          first: 6
+          privacy: PUBLIC
+          orderBy: { field: PUSHED_AT, direction: DESC }
+          contributionTypes: COMMIT
+        ) {
+          edges {
+            node {
+              name
+              nameWithOwner
+              url
+              description
+              owner {
+                login
+              }
+            }
+          }
+        }
         repositories(
           first: 12
           privacy: PUBLIC
@@ -48,9 +65,13 @@ const Projects = () => (
       <Section>
         <h1 className="tl f3 b w-auto dib">Latest Projects</h1>
         <ContentList>
-          {data.github.viewer.repositories.edges
+          {data.github.viewer.repositoriesContributedTo.edges
             .map(edge => edge.node)
-            .filter(proj => proj.owner.login === 'andrewsosa')
+            .concat(
+              data.github.viewer.repositories.edges
+                .map(edge => edge.node)
+                .filter(proj => proj.owner.login === 'andrewsosa'),
+            )
             .filter(proj => proj.description !== null)
             .map(proj => (
               <ProjectLink
