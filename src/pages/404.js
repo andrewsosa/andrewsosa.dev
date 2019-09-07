@@ -1,15 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+export default function NotFound() {
+  if (typeof window !== 'undefined') {
+    window.location = '/';
+  }
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <Link to="/">Click here to get back home.</Link>
-  </Layout>
-);
-
-export default NotFoundPage;
+  return null;
+}
