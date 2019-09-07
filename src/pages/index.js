@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Section>
       <p className="lh-copy f3 f2-m f1-l tl">
         Andrew Sosa is a software & dataops engineer, currently working at
-        L3Harris technologies.
+        L3Harris Technologies.
       </p>
     </Section>
     <Projects />
