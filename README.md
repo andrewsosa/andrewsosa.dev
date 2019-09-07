@@ -1,5 +1,6 @@
 # [`andrewsosa.dev`](https://andrewsosa.dev)
-> Hosted on Github pages at [`andrewsosa.github.io`](https://andrewsosa.github.io)
+<!-- > Hosted on Github pages at [`andrewsosa.github.io`](https://andrewsosa.github.io) -->
+> Hosted on Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/9d31de2f-38e3-4f08-914f-62ef3b8acdb0/deploy-status)](https://app.netlify.com/sites/andrewsosa-dev/deploys)
 
 ## Built with:
   - [Gatsby](https://www.gatsbyjs.org/) – React Static Site Generator.
