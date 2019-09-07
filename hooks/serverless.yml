@@ -1,0 +1,19 @@
+# serverless.yml
+
+service: hooks
+app: andrewsosa-dev
+org: andrewsosa
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: prod
+
+functions:
+  rebuild:
+    handler: cronjob.handler
+    description: rebuild site every 6 hours
+    events:
+      - schedule: rate(6 hours)
+    environment:
+      BUILD_HOOK_URL: ${ssm:andrewsosadev-build-hook}
