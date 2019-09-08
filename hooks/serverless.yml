@@ -15,5 +15,4 @@ functions:
     description: rebuild site every 6 hours
     events:
       - schedule: rate(6 hours)
-    environment:
-      BUILD_HOOK_URL: ${ssm:andrewsosadev-build-hook}
+    environment: ${file(env.yml):default}
