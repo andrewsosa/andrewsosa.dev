@@ -1,8 +1,8 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import { Section } from '../layout';
-import { ContentList, ContentLink } from '../layout/content';
+import { Section } from "../layout";
+import { ContentList, ContentLink } from "../layout/content";
 
 const ProjectLink = ({ link, name, desc }) => (
   <li className="mt4 db">
@@ -29,6 +29,7 @@ const query = graphql`
               nameWithOwner
               url
               description
+              updatedAt
               owner {
                 login
               }
@@ -47,6 +48,7 @@ const query = graphql`
               nameWithOwner
               url
               description
+              updatedAt
               owner {
                 login
               }
@@ -72,12 +74,14 @@ const Projects = () => (
             .concat(
               data.github.viewer.repositories.edges
                 .map(edge => edge.node)
-                .filter(proj => proj.owner.login === 'andrewsosa')
+                .filter(proj => proj.owner.login === "andrewsosa")
                 .filter(proj => proj.description !== null)
-                .slice(0, 4),
+                .slice(0, 5),
             )
+            .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
             .map(proj => (
               <ProjectLink
+                key={proj.nameWithOwner}
                 link={proj.url}
                 name={proj.nameWithOwner}
                 desc={proj.description}
