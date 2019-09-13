@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout, { Section } from '../components/layout';
-import { ContentList, ContentLink } from '../components/layout/content';
-import Image from '../components/image';
-import SEO from '../components/seo';
+import Layout, { Section } from "../components/layout";
+import { ContentList, ContentLink } from "../components/layout/content";
+import Image from "../components/image";
+import SEO from "../components/seo";
 
-import Projects from '../components/content/Projects';
+import Projects from "../components/content/Projects";
 
 const IndexPage = () => (
   <Layout>

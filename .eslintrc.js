@@ -15,5 +15,6 @@ module.exports = {
     'no-console': 'off',
     'prettier/prettier': 'error',
     'react/prop-types': 'off',
+    'react/jsx-filename-extension': 'off',
   },
 };

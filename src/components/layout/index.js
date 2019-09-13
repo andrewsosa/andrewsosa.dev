@@ -5,18 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import Navbar from '../Navbar';
-import Header from '../header';
-import Footer from '../Footer';
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
-import '../../styles/reset.css';
-import 'tachyons/css/tachyons.css';
-import '../../styles/global.css';
-import styles from './layout.module.css';
+import "../../styles/reset.css";
+import "tachyons/css/tachyons.css";
+import "../../styles/global.css";
+import styles from "./layout.module.css";
 
 const Layout = ({ children }) => (
   <>
@@ -40,4 +39,4 @@ Layout.propTypes = {
 };
 
 export default Layout;
-export { default as Section } from './Section';
+export { default as Section } from "./Section";
