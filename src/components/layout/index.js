@@ -18,7 +18,7 @@ import "../../styles/global.css";
 const Layout = ({ children }) => (
   <>
     <div className="pt2 pb4 normal mono primary-color">
-      <div className="bg-white h-100 pa3 ph0-l pv6-l">
+      <div className="bg-white h-100 pa3 ph5-l pv6-l">
         <div className="center mw9 ph4">
           {children}
           <Footer />
