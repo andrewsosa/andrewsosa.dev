@@ -1,8 +1,9 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
+import styled from "styled-components";
 
 import { Section } from "../layout";
-import { ContentList, ContentLink } from "../layout/content";
+import { ContentList } from "../layout/content";
 
 const ProjectLink = ({ link, name, desc }) => (
   <li className="mt4 db">
@@ -60,35 +61,73 @@ const query = graphql`
   }
 `;
 
-const Projects = () => (
+const Styled = {
+  Header: styled.h1`
+    .arrow {
+      transition: all 0.3s ease;
+      margin-left: 0.5rem;
+      opacity: 1;
+    }
+    &:hover {
+      .arrow {
+        margin-left: 1.25rem;
+        opacity: 1;
+      }
+    }
+  `,
+};
+
+const ProjectsHeader = ({ showArrow }) => (
+  <Styled.Header className="primary-color tl f3 b w-auto dib">
+    <span>Latest Projects</span>
+    {showArrow && <span className="arrow">{"->"}</span>}
+  </Styled.Header>
+);
+
+const Projects = ({ limit, githubLink, linkToPage }) => (
   <StaticQuery
     query={query}
     render={data => (
-      <Section>
-        <h1 className="tl f3 b w-auto dib">Latest Projects</h1>
-        <ContentList>
-          {data.github.viewer.repositoriesContributedTo.edges
-            .map(edge => edge.node)
-            .filter(proj => proj.description !== null)
-            .slice(0, 3)
-            .concat(
-              data.github.viewer.repositories.edges
-                .map(edge => edge.node)
-                .filter(proj => proj.owner.login === "andrewsosa")
-                .filter(proj => proj.description !== null)
-                .slice(0, 5),
-            )
-            .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
-            .map(proj => (
-              <ProjectLink
-                key={proj.nameWithOwner}
-                link={proj.url}
-                name={proj.nameWithOwner}
-                desc={proj.description}
-              />
-            ))}
-        </ContentList>
-      </Section>
+      <>
+        <Section>
+          {linkToPage ? (
+            <Link to="/projects">
+              <ProjectsHeader showArrow />
+            </Link>
+          ) : (
+            <ProjectsHeader />
+          )}
+          <ContentList>
+            {data.github.viewer.repositoriesContributedTo.edges
+              .map(edge => edge.node)
+              .filter(proj => proj.description !== null)
+              .concat(
+                data.github.viewer.repositories.edges
+                  .map(edge => edge.node)
+                  .filter(proj => proj.owner.login === "andrewsosa")
+                  .filter(proj => proj.description !== null),
+              )
+              .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+              .slice(0, limit || 10)
+              .map(proj => (
+                <ProjectLink
+                  key={proj.nameWithOwner}
+                  link={proj.url}
+                  name={proj.nameWithOwner}
+                  desc={proj.description}
+                />
+              ))}
+          </ContentList>
+        </Section>
+        {githubLink && (
+          <div className="mt4">
+            <a className="underline" href="https://github.com/andrewsosa">
+              See more on Github
+              {" ->"}
+            </a>
+          </div>
+        )}
+      </>
     )}
   />
 );
