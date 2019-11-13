@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 // const fs = require('fs');
 
 module.exports = {
@@ -8,6 +8,13 @@ module.exports = {
     author: `andrewsosa`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-dev`,
+      options: {
+        // This is your username on Dev.to
+        username: `andrewsosa`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,12 +49,12 @@ module.exports = {
     //   },
     // },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-graphql`,
       options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
+        typeName: `GitHub`,
+        fieldName: `github`,
         // Url to query from
-        url: 'https://api.github.com/graphql',
+        url: `https://api.github.com/graphql`,
         // HTTP headers
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
