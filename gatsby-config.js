@@ -1,6 +1,3 @@
-require("dotenv").config();
-// const fs = require('fs');
-
 module.exports = {
   siteMetadata: {
     title: `Andrew Sosa`,
@@ -8,13 +5,7 @@ module.exports = {
     author: `andrewsosa`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-dev`,
-      options: {
-        // This is your username on Dev.to
-        username: `andrewsosa`,
-      },
-    },
+    `gatsby-plugin-flow`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -49,6 +40,11 @@ module.exports = {
     //   },
     // },
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
+    `gatsby-plugin-mdx`,
+    {
       resolve: `gatsby-source-graphql`,
       options: {
         typeName: `GitHub`,
@@ -62,6 +58,13 @@ module.exports = {
         },
         // Additional options to pass to node-fetch
         fetchOptions: {},
+      },
+    },
+    {
+      resolve: `gatsby-source-dev`,
+      options: {
+        // This is your username on Dev.to
+        username: `andrewsosa`,
       },
     },
   ],

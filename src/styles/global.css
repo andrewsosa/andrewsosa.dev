@@ -1,4 +1,4 @@
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+/* @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
 
 @font-face {
   font-family: "Graphik Web";
@@ -25,10 +25,10 @@
   font-style: normal;
   font-stretch: normal;
   font-display: swap;
-}
+} */
 
 :root {
-  --gray: rgba(30, 30, 30, 1);
+  /* --gray: rgba(30, 30, 30, 1);
   --light-gray: rgba(130, 130, 130, 1);
   --border-gray: rgba(225, 225, 225, 1);
   --input-gray: rgba(200, 200, 200, 1);
@@ -37,9 +37,9 @@
   --text: var(--gray);
   --dark-blue: #71427c;
   --light-blue: #ccc7e9;
-  color: var(--gray);
+  color: var(--gray); */
 }
-
+/*
 .graphik {
   color: var(--gray);
 
@@ -51,15 +51,7 @@
 
 .mono {
   font-family: "Fira Code", "Inconsolata", Consolas, monaco, monospace;
-}
-
-.primary-color {
-  color: var(--dark-blue);
-}
-
-.accent-color {
-  color: var(--light-blue);
-}
+} */
 
 /* .accent-bottom {
   position: relative;
@@ -79,7 +71,6 @@
   z-index: -1;
 } */
 
-body {
-  min-height: 100vh;
-  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+.measure-narrow {
+  max-width: 22em;
 }

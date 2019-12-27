@@ -8,35 +8,43 @@
     "url": "https://github.com/andrewsosa/andrewsosa.dev"
   },
   "dependencies": {
-    "dotenv": "^7.0.0",
-    "gatsby": "^2.15.9",
-    "gatsby-image": "^2.2.17",
-    "gatsby-plugin-manifest": "^2.2.14",
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "flow-bin": "^0.112.0",
+    "gatsby": "^2.18.17",
+    "gatsby-image": "^2.2.33",
+    "gatsby-plugin-flow": "^1.1.14",
+    "gatsby-plugin-manifest": "^2.2.28",
+    "gatsby-plugin-mdx": "^1.0.57",
     "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-react-helmet": "^3.1.6",
-    "gatsby-plugin-sharp": "^2.2.20",
+    "gatsby-plugin-react-helmet": "^3.1.15",
+    "gatsby-plugin-sharp": "^2.3.0",
+    "gatsby-plugin-styled-components": "^3.1.13",
     "gatsby-source-dev": "^0.1.4",
-    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-source-filesystem": "^2.1.37",
     "gatsby-source-github-api": "^0.0.4",
-    "gatsby-source-graphql": "^2.1.12",
-    "gatsby-transformer-sharp": "^2.2.13",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "gatsby-source-graphql": "^2.1.23",
+    "gatsby-transformer-sharp": "^2.3.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2",
-    "tachyons": "^4.11.1"
+    "styled-components": "^4.4.1",
+    "tachyons": "^4.11.1",
+    "use-media": "^1.4.0"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
-    "eslint-config-airbnb": "18.0.1",
-    "eslint-config-prettier": "^6.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.18.2"
+    "graphql": "^14.5.8",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2"
   },
   "license": "MIT",
   "scripts": {
@@ -45,7 +53,6 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run dev",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -d public/ -b master "
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
