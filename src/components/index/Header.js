@@ -18,7 +18,7 @@ export default function Header() {
   const [useDarkTheme, toggleTheme] = useTheme();
 
   return (
-    <HeaderSection className="vh-100 pa4 pa6-l pt5 pt4-ns">
+    <HeaderSection className="vh-100 center mw9 pa4 pa6-l pt5 pt4-ns">
       <Toggle on={useDarkTheme} onClick={toggleTheme} />
       <h1 className="f4 f2-ns">
         {`Hello! `}
