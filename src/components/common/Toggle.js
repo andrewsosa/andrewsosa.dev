@@ -62,7 +62,7 @@ export default function Toggle({ on, onClick, ...rest }: ToggleProps) {
   return (
     <OuterWrapper {...rest}>
       <img src={on ? sunWhite : sun} />
-      <InnerWrapper onClick={onClick} on={on}>
+      <InnerWrapper onClick={onClick} on={on ? on.toString() : undefined}>
         <input id="switch" type="checkbox" />
         <label htmlFor="switch" id="toggle" onClick={onClick}>
           Toggle
