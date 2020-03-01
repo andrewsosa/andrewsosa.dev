@@ -14,6 +14,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/content/projects`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -43,29 +51,30 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
     },
-    `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: `GitHub`,
-        fieldName: `github`,
-        // Url to query from
-        url: `https://api.github.com/graphql`,
-        // HTTP headers
-        headers: {
-          // Learn about environment variables: https://gatsby.dev/env-vars
-          Authorization: `bearer ${process.env.GITHUB_GRAPHQL_TOKEN}`,
-        },
-        // Additional options to pass to node-fetch
-        fetchOptions: {},
-      },
-    },
-    {
-      resolve: `gatsby-source-dev`,
-      options: {
-        // This is your username on Dev.to
-        username: `andrewsosa`,
-      },
-    },
+    `gatsby-plugin-sass`,
+    // `gatsby-plugin-mdx`,
+    // {
+    //   resolve: `gatsby-source-graphql`,
+    //   options: {
+    //     typeName: `GitHub`,
+    //     fieldName: `github`,
+    //     // Url to query from
+    //     url: `https://api.github.com/graphql`,
+    //     // HTTP headers
+    //     headers: {
+    //       // Learn about environment variables: https://gatsby.dev/env-vars
+    //       Authorization: `bearer ${process.env.GITHUB_GRAPHQL_TOKEN}`,
+    //     },
+    //     // Additional options to pass to node-fetch
+    //     fetchOptions: {},
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-dev`,
+    //   options: {
+    //     // This is your username on Dev.to
+    //     username: `andrewsosa`,
+    //   },
+    // },
   ],
 };

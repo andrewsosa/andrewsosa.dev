@@ -1,11 +1,12 @@
 // @flow
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { useTheme } from "./Theme";
 
-import sun from "../../assets/toggle/sun.svg";
-import moon from "../../assets/toggle/moon.svg";
-import sunWhite from "../../assets/toggle/sun-white.svg";
-import moonWhite from "../../assets/toggle/moon-white.svg";
+import sun from "../../../assets/toggle/sun.svg";
+import moon from "../../../assets/toggle/moon.svg";
+import sunWhite from "../../../assets/toggle/sun-white.svg";
+import moonWhite from "../../../assets/toggle/moon-white.svg";
 
 const OuterWrapper = styled.div`
   display: flex;
@@ -53,22 +54,22 @@ const InnerWrapper = styled.div`
   }
 `;
 
-export type ToggleProps = {
-  on: boolean,
-  onClick: () => any,
-};
+export default function ThemeToggle({ ...props }: { [string]: any }) {
+  const [useDarkTheme, toggleTheme] = useTheme();
 
-export default function Toggle({ on, onClick, ...rest }: ToggleProps) {
   return (
-    <OuterWrapper {...rest}>
-      <img src={on ? sunWhite : sun} />
-      <InnerWrapper onClick={onClick} on={on ? on.toString() : undefined}>
+    <OuterWrapper {...props}>
+      <img src={useDarkTheme ? sunWhite : sun} />
+      <InnerWrapper
+        onClick={toggleTheme}
+        on={useDarkTheme ? useDarkTheme.toString() : undefined}
+      >
         <input id="switch" type="checkbox" />
-        <label htmlFor="switch" id="toggle" onClick={onClick}>
+        <label htmlFor="switch" id="toggle" onClick={toggleTheme}>
           Toggle
         </label>
       </InnerWrapper>
-      <img src={on ? moonWhite : moon} />
+      <img src={useDarkTheme ? moonWhite : moon} />
     </OuterWrapper>
   );
 }

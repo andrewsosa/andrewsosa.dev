@@ -10,7 +10,6 @@ export const LightTheme = {
 export const DarkTheme = {
   colors: {
     ...LightTheme.colors,
-    // background: "#000000",
     background: "#171c28",
     text: "#afafbf",
     textPrimary: "#ffffff",
