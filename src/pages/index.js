@@ -1,16 +1,12 @@
 import React from "react";
 
-import SEO from "../components/SEO";
-import Layout from "../components/ui/container/Layout";
-import IndexHeader from "../components/content/IndexHeader";
-import ProjectGrid from "../components/content/ProjectGrid";
+import Projects from "../components/projects/Projects";
+import Page from "../components/Page";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Andrew Sosa" />
-    <IndexHeader />
-    <ProjectGrid />
-  </Layout>
+  <Page>
+    <Projects />
+  </Page>
 );
 
 export default IndexPage;

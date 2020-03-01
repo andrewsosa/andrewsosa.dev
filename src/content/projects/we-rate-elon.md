@@ -1,15 +1,14 @@
 ---
-path: "/projects/stargazer"
-date: "2020-02-27"
-title: "Stargazer"
-image: "https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png"
-# image: "https://fredfahlke.github.io/img/projects/instagram/instagram_thumb.jpg"
+path: "/projects/we-rate-elon"
+date: "2019-11-11"
+title: "We Rate Elon"
+image: "https://raw.githubusercontent.com/andrewsosa/we-rate-elon/master/public/img/elon-cover.png"
 ---
 
 # stargazer
 > Find your friends on github
 
-![preview.png](https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)
+![preview.png](https://github.com/andrewsosa/stargazer/blob/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)
 
 ### How It Works
 
