@@ -8,8 +8,6 @@
     "url": "https://github.com/andrewsosa/andrewsosa.dev"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
     "babel-plugin-styled-components": "^1.10.6",
     "flow-bin": "^0.112.0",
     "gatsby": "^2.18.17",
@@ -33,7 +31,6 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.4.1",
-    "tachyons": "^4.11.1",
     "tachyons-sass": "^4.9.5",
     "use-media": "^1.4.0"
   },

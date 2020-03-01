@@ -15,6 +15,7 @@ const query = graphql`
           id
           frontmatter {
             title
+            date
             image
             path
           }
@@ -31,6 +32,7 @@ const Projects = () => {
     <ProjectCell
       key={node.id}
       title={node.frontmatter.title}
+      date={node.frontmatter.date}
       image={node.frontmatter.image}
       url={node.frontmatter.path}
     />

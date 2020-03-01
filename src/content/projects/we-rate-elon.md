@@ -2,7 +2,8 @@
 path: "/projects/we-rate-elon"
 date: "2019-11-11"
 title: "We Rate Elon"
-image: "https://raw.githubusercontent.com/andrewsosa/we-rate-elon/master/public/img/elon-cover.png"
+# image: "https://raw.githubusercontent.com/andrewsosa/we-rate-elon/master/public/img/elon-cover.png"
+image: "/elon.jpeg"
 ---
 
 # stargazer

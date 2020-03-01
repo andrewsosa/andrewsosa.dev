@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Page from "../Page";
+import Content from "../content/Content";
 
 export default function ProjectPage({ data }) {
   const {
@@ -9,7 +10,10 @@ export default function ProjectPage({ data }) {
 
   return (
     <Page title={frontmatter.title}>
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <p className="ttu fw5 gray">{frontmatter.date}</p>
+      <section>
+        <Content content={html} />
+      </section>
     </Page>
   );
 }

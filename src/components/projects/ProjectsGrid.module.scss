@@ -1,16 +1,25 @@
+@import "tachyons-sass/scss/_variables.scss";
+@import "tachyons-sass/scss/_aspect-ratios.scss";
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
 }
 
 .grid-cell {
-  height: 400px;
-  //   background-color: grey;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  @media #{$breakpoint-not-small} {
+    grid-template-columns: 2fr 3fr;
   }
+}
+
+.grid-cell img {
+  height: 10em;
+  width: 100%;
+  object-fit: cover;
 }

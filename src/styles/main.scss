@@ -1,0 +1,16 @@
+@import "tachyons-sass/tachyons.scss";
+
+body {
+  @extend .sans-serif, .f5;
+}
+
+header,
+main,
+footer {
+  @extend .mw7, .center, .ph3;
+  line-height: 1.8;
+}
+
+p > a {
+  @extend .link, .underline-hover, .fw7;
+}

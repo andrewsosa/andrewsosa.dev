@@ -1,17 +1,14 @@
 ---
-path: "/projects/stargazer"
-date: "2020-02-27"
-title: "Stargazer: Find your friends on Github"
-image: "https://github.githubassets.com/images/modules/open_graph/github-octocat.png"
-# image: "https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png"
-# image: "https://fredfahlke.github.io/img/projects/instagram/instagram_thumb.jpg"
+path: "/projects/eeyore"
+date: "2018-06-10"
+title: "Eeyore: npm module to fetch Github pins"
+image: "https://ohmy.disney.com/wp-content/uploads/2013/09/Eeyore_3.jpg"
 ---
 
-![preview.png](https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)
-
-# Stargazer
+# stargazer
 > Find your friends on github
 
+![preview.png](https://github.com/andrewsosa/stargazer/blob/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)
 
 ### How It Works
 
