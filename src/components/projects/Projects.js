@@ -1,7 +1,8 @@
 // @flow
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import ProjectGrid, { ProjectCell } from "./ProjectsGrid";
+import ProjectGrid from "./ProjectGrid";
+import ProjectCell from "./ProjectCell";
 
 const query = graphql`
   query ProjectQuery {
@@ -15,9 +16,15 @@ const query = graphql`
           id
           frontmatter {
             title
-            date
-            image
             path
+            date
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -33,7 +40,7 @@ const Projects = () => {
       key={node.id}
       title={node.frontmatter.title}
       date={node.frontmatter.date}
-      image={node.frontmatter.image}
+      image={node.frontmatter.image.childImageSharp.fluid}
       url={node.frontmatter.path}
     />
   ));

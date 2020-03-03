@@ -2,9 +2,7 @@
 path: "/projects/stargazer"
 date: "2020-02-27"
 title: "Stargazer: Find your friends on Github"
-image: "https://github.githubassets.com/images/modules/open_graph/github-octocat.png"
-# image: "https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png"
-# image: "https://fredfahlke.github.io/img/projects/instagram/instagram_thumb.jpg"
+image: ../images/octocat.png
 ---
 
 ![preview.png](https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)

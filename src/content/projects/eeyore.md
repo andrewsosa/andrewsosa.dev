@@ -2,7 +2,7 @@
 path: "/projects/eeyore"
 date: "2018-06-10"
 title: "Eeyore: npm module to fetch Github pins"
-image: "https://ohmy.disney.com/wp-content/uploads/2013/09/Eeyore_3.jpg"
+image: ../images/eeyore.jpg
 ---
 
 # stargazer

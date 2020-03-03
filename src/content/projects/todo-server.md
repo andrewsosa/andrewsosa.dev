@@ -2,7 +2,7 @@
 path: "/projects/todo-service"
 date: "2019-09-06"
 title: "todo-server: a todo list microservice example"
-image: "https://pbs.twimg.com/media/DjexQzrU0AEcTc8.png"
+image: ../images/micro.png
 ---
 
 # To Do List Microservice Server Example

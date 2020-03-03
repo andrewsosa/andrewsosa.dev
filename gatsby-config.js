@@ -7,11 +7,29 @@ module.exports = {
   plugins: [
     `gatsby-plugin-flow`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/content/images`,
       },
     },
     {
@@ -28,9 +46,6 @@ module.exports = {
         path: `${__dirname}/src/content/main`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +55,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/content/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -59,23 +74,6 @@ module.exports = {
       options: {},
     },
     `gatsby-plugin-sass`,
-    // `gatsby-plugin-mdx`,
-    // {
-    //   resolve: `gatsby-source-graphql`,
-    //   options: {
-    //     typeName: `GitHub`,
-    //     fieldName: `github`,
-    //     // Url to query from
-    //     url: `https://api.github.com/graphql`,
-    //     // HTTP headers
-    //     headers: {
-    //       // Learn about environment variables: https://gatsby.dev/env-vars
-    //       Authorization: `bearer ${process.env.GITHUB_GRAPHQL_TOKEN}`,
-    //     },
-    //     // Additional options to pass to node-fetch
-    //     fetchOptions: {},
-    //   },
-    // },
     // {
     //   resolve: `gatsby-source-dev`,
     //   options: {

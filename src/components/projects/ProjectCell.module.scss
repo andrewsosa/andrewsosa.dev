@@ -1,12 +1,6 @@
 @import "tachyons-sass/scss/_variables.scss";
 @import "tachyons-sass/scss/_aspect-ratios.scss";
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
-
 .grid-cell {
   position: relative;
   display: grid;
@@ -18,8 +12,6 @@
   }
 }
 
-.grid-cell img {
-  height: 10em;
-  width: 100%;
-  object-fit: cover;
+.grid-cell > div:first-child {
+  height: 11em;
 }

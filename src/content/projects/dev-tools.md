@@ -2,8 +2,7 @@
 path: "/projects/dev-tools"
 date: "2019-09-09"
 title: "dev-tools: an ES6 dev setup script"
-# image: "https://reactjs.org/logo-og.png"
-image: "https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png"
+image: ../images/js.png
 ---
 
 # [`@andrewsosa/dev-tools`](https://www.npmjs.com/package/@andrewsosa/dev-tools)

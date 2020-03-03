@@ -1,12 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
+
 import Page from "../Page";
 import Content from "../content/Content";
 
-export default function ProjectPage({ data }) {
+export default function ProjectPage({ data: pageQuery }) {
   const {
     markdownRemark: { frontmatter, html },
-  } = data;
+  } = pageQuery;
 
   return (
     <Page title={frontmatter.title}>
