@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import Page from "../components/Page";
 import Projects from "../components/projects/Projects";
-import Content from "../components/content/Content";
+import Content from "../components/Content";
 
 const IndexPage = ({ data }) => (
   <Page>

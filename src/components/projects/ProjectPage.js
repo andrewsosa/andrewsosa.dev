@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Page from "../Page";
-import Content from "../content/Content";
+import Content from "../Content";
 
 export default function ProjectPage({ data: pageQuery }) {
   const {
@@ -11,7 +11,6 @@ export default function ProjectPage({ data: pageQuery }) {
 
   return (
     <Page title={frontmatter.title}>
-      <p className="ttu fw5 gray">{frontmatter.date}</p>
       <section>
         <Content content={html} />
       </section>

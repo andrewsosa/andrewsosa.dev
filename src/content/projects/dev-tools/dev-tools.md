@@ -2,11 +2,18 @@
 path: "/projects/dev-tools"
 date: "2019-09-09"
 title: "dev-tools: an ES6 dev setup script"
-image: ../images/js.png
+image: ./js.png
 ---
 
-# [`@andrewsosa/dev-tools`](https://www.npmjs.com/package/@andrewsosa/dev-tools)
+# my nodejs dev tools
 [![npm version](https://badge.fury.io/js/%40andrewsosa%2Fdev-tools.svg)](https://badge.fury.io/js/%40andrewsosa%2Fdev-tools)
+
+
+* __Github__: https://github.com/andrewsosa/dev-tools
+* __npm__: https://www.npmjs.com/package/@andrewsosa/dev-tools
+
+
+So you know how you always install the same tools every time you set up a Node.js workspace? Basically, this script will automate that.
 
 ## Usage
 ```bash

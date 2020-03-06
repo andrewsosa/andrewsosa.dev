@@ -2,14 +2,13 @@
 path: "/projects/stargazer"
 date: "2020-02-27"
 title: "Stargazer: Find your friends on Github"
-image: ../images/octocat.png
+image: ./octocat.png
 ---
-
-![preview.png](https://raw.githubusercontent.com/andrewsosa/stargazer/ae5cff98be19e0bb8a0179f5514b22f8d38cf80c/public/preview.png)
-
 # Stargazer
-> Find your friends on github
+* __Live__: https://stargazer.now.sh
+* __Github__: https://github.com/andrewsosa/stargazer
 
+![stargazer](./stargazer_app.png)
 
 ### How It Works
 
