@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Andrew Sosa`,
-    description: `Software & DataOps Engineer @ L3Harris Technologies | Full stack web dev enthusiast.`,
+    description: `Lead Software Engineer/Data Engineer | Full stack web dev enthusiast.`,
     author: `andrewsosa`,
   },
   plugins: [
@@ -84,5 +84,16 @@ module.exports = {
     //     username: `andrewsosa`,
     //   },
     // },
+    {
+      resolve: "gatsby-plugin-fathom",
+      options: {
+        // Fathom server URL. Defaults to `cdn.usefathom.com`
+        // trackingUrl: "your-fathom-instance.com",
+        // Unique site id
+        siteId: "LIWEIDEB",
+        // Domain whitelist
+        whitelistHostnames: ["andrewsosa.dev"],
+      },
+    },
   ],
 };
