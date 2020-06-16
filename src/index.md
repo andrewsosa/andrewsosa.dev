@@ -13,7 +13,7 @@ layout: base-layout
 
 <br>
 
-I'm a [software engineer](https://github.com/andrewsosa) focusing on data engineering and pipeline automation. Check out my [github](https://github.com/andrewsosa), [linkedin](https://www.linkedin.com/in/andrew-sosa), [resume page](/resume), [resume pdf](#) or send me an [email](mailto:andrew@andrewsosa.dev).
+I'm a [software engineer](https://github.com/andrewsosa) focusing on data engineering and pipeline automation. Check out my [github](https://github.com/andrewsosa), [linkedin](https://www.linkedin.com/in/andrew-sosa), [resume page](/resume), [resume pdf](/static/Andrew%20Sosa%20Resume%20202003.pdf) or send me an [email](mailto:andrew@andrewsosa.dev).
 
 Here's some stuff I've been working on.
 
