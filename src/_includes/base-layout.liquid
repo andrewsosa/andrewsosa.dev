@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css"
+    />
+    <link rel="stylesheet" href="https://newcss.net/theme/night.css" />
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+    <style>
+      main {
+        max-width: 40rem;
+        margin: 5rem auto 0;
+      }
+
+      blockquote h2 {
+        padding-top: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        main blockquote {
+          margin: 0 -2rem;
+        }
+      }
+    </style>
+
+    <title>{{ site.title }}</title>
+
+  </head>
+  <body>
+  <main>
+    {{ content }}
+  </main>
+  </body>
+</html>
