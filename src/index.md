@@ -17,7 +17,7 @@ I'm a [software engineer](https://github.com/andrewsosa) focusing on data engine
 
 Here's some stuff I've been working on.
 
-{% for proj in collections.repos %}
+{% for proj in collections.repos reversed %}
   <br>
 
   > ## {{ proj.data.title }}
