@@ -55,12 +55,19 @@
     <!-- Title -->
     <title>{{ site.title }}</title>
 
-    <!-- Fathom - beautiful, simple website analytics -->
+    <!-- Panelbear Analytics - We respect your privacy -->
     <script
-      src="https://cdn.usefathom.com/script.js"
-      site="LIWEIDEB"
-      defer
+      async
+      src="https://cdn.panelbear.com/analytics.js?site=GlLjdCAVeVU"
     ></script>
+    <script>
+      window.panelbear =
+        window.panelbear ||
+        function() {
+          (window.panelbear.q = window.panelbear.q || []).push(arguments);
+        };
+      panelbear("config", { site: "GlLjdCAVeVU" });
+    </script>
   </head>
   <body>
     <main>
